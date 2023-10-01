@@ -1,8 +1,6 @@
 package com.example.club.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -18,6 +16,17 @@ public class Players extends Base{
 
     @Column(name = "edad")
     private Integer age;
+
+    @Column(name = "pie_habil")
+    private String foot;
+
+    @Column(name = "numero_camiseta")
+    private Integer number;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_club")
+    private Club club;
+
 }
 
 
