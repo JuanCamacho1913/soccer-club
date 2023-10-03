@@ -23,7 +23,7 @@ public class Players extends Base{
     @Column(name = "numero_camiseta")
     private Integer number;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "fk_club")
     private Club club;
 

@@ -23,8 +23,8 @@ public class Club extends Base{
     @Column(name = "estadio")
     private String stadium;
 
-    @OneToMany(cascade = CascadeType.REFRESH, orphanRemoval = true)                                                    //El FetchType.LAZY es para que no sobrecargue la lista cuando tenga un creador, solo se va a poblar la lista cuando yo la necesite utilizar
-    private List<Players> playersList = new ArrayList<>();                                                                                 //El orphanRemoval = true si se elimina un club automaticamnete se eliminaran los jugadores que esten alli
+   // @OneToMany(cascade = CascadeType.REFRESH, orphanRemoval = true)                                                    //El FetchType.LAZY es para que no sobrecargue la lista cuando tenga un creador, solo se va a poblar la lista cuando yo la necesite utilizar
+  //  private List<Players> playersList = new ArrayList<>();                                                                                 //El orphanRemoval = true si se elimina un club automaticamnete se eliminaran los jugadores que esten alli
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_presidente")

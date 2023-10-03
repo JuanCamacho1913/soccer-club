@@ -20,7 +20,7 @@ public class TrainerDt extends Base{
     @Column(name = "asistente_tecnico")
     private String technicalAssistant;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_club")
-    private Club club;
+  //  @OneToOne(cascade = CascadeType.ALL)
+  //  @JoinColumn(name = "fk_club")
+  //  private Club club;
 }

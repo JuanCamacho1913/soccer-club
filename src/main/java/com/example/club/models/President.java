@@ -14,8 +14,8 @@ public class President extends Base {
     @Column(name = "apellido")
     private String lastName;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_club")
-    private Club club;
+  //  @OneToOne(cascade = CascadeType.ALL)
+  //  @JoinColumn(name = "fk_club")
+  //  private Club club;
 
 }
